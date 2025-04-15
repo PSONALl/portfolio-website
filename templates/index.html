@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonali Patil - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Sonali Patil</h1>
+        <p>Embedded Software Engineer | Networking | IoT | Matter | Wi-Fi | Bluetooth</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an Embedded Software Engineer with a strong background in C, C++, Networking, Embedded Systems, Wi-Fi, Bluetooth, and Matter IoT. I love working on low-level systems, building robust firmware, and optimizing performance. With 3+ years of experience in top tech companies like Arista and Espressif, I specialize in smart home technologies and wireless protocols. I enjoy problem-solving, system programming, and contributing to impactful projects.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+
+        <div class="job">
+            <h3>Embedded WiFi Software Engineer at Arista, Pune</h3>
+            <p><strong>Dec 2023 - Present</strong></p>
+            <ul>
+                <li><strong>AP Uptime Reports:</strong> Owned the feature to generate device uptime reports, showing uptime percentages of Access Points. <br><em>Technologies:</em> C, Go, Python, Linux, Make</li>
+                <li><strong>WifiAPNet & Hostapd Package Maintenance:</strong> Added VxLAN defragmentation, managed hostapd packages, maintained kernel code, wrote autotests, performed bug fixes, and analyzed WiFi sniffers using Wireshark.<br><em>Technologies:</em> C, Python, Shell script, Linux, Make</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Embedded Software Engineer at Espressif, Pune</h3>
+            <p><strong>Feb 2023 - Dec 2023</strong></p>
+            <ul>
+                <li><strong>Matter (New Smart Home IOT Standard):</strong> Got ESP32 and ESP32S3 certified by Amazon’s Matter Simple Setup, added fixes in ESP-matter GitHub repos, implemented Delta OTA feature using HTTPS.<br><em>Technologies:</em> C++, OOPS, RTOS, FreeRTOS, CMake, Make</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Associate Engineer at Espressif, Pune</h3>
+            <p><strong>July 2021 - Jan 2023</strong></p>
+            <ul>
+                <li><strong>Matter (New Smart Home IOT Standard):</strong> Developed Bluetooth controller, Ethernet commissioning, implemented various smart device types, and handled GitHub issues and feature requests.<br><em>Technologies:</em> C, C++, OOPS, Bluetooth, Ethernet, Wi-Fi, RTOS, FreeRTOS, CMake, Make</li>
+                <li><strong>Ecosystem Feature Requests:</strong> Created device types requested by clients like Google, Apple, and Amazon.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Intern at Espressif, Pune</h3>
+            <p><strong>Jan 2021 – June 2021</strong></p>
+            <ul>
+                <li><strong>Blufi Protocol for Nimble:</strong> Implemented Blufi - a secure protocol for the Apache Nimble Bluetooth stack used by Espressif.<br><em>Technologies:</em> C, Apache Nimble, Bluetooth, RTOS, FreeRTOS, CMake, Make</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Debugg Assist for Arista:</strong> Flask-based website to generate backtrace/debug info from debug bundle using GDB.<br><em>Tech:</em> Python, Flask, GDB</li>
+            <li><strong>Fire Detection System:</strong> Machine learning CNN model to detect fire from surveillance videos.<br><em>Tech:</em> Python, CNN, Deep Learning, OpenCV</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can find me on <a href="https://www.linkedin.com/in/sonalinpatil" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sonali Patil</p>
+    </footer>
+</body>
+
+</html>
