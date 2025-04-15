@@ -2,83 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonali Patil - Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonali Patil | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Sonali Patil</h1>
-        <p>Embedded Software Engineer | Networking | IoT | Matter | Wi-Fi | Bluetooth</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Sonali Patil</h1>
+    <p>Senior Software Engineer | Embedded Systems | IoT | CSE, WCE</p>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an Embedded Software Engineer with a strong background in C, C++, Networking, Embedded Systems, Wi-Fi, Bluetooth, and Matter IoT. I love working on low-level systems, building robust firmware, and optimizing performance. With 3+ years of experience in top tech companies like Arista and Espressif, I specialize in smart home technologies and wireless protocols. I enjoy problem-solving, system programming, and contributing to impactful projects.</p>
-    </section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:sonalipatil25oct@gmail.com">sonalipatil25oct@gmail.com</a></li>
+      <li>
+        <a href="https://github.com/PSONALl" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/sonalinpatil/" target="_blank">LinkedIn</a>
+      </li>
+    </ul>
+  </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
+  <section>
+    <h2>Education</h2>
+    <p><strong>Walchand College of Engineering, Sangli</strong><br />
+    B.E. in Computer Science and Engineering (2017–2021) — GPA: 9.4/10 (Top 3%)<br />
+    Club Service Director for ACSES, WCE (Conducted DSA and technical sessions for CSE students)</p>
+  </section>
 
-        <div class="job">
-            <h3>Embedded WiFi Software Engineer at Arista, Pune</h3>
-            <p><strong>Dec 2023 - Present</strong></p>
-            <ul>
-                <li><strong>AP Uptime Reports:</strong> Owned the feature to generate device uptime reports, showing uptime percentages of Access Points. <br><em>Technologies:</em> C, Go, Python, Linux, Make</li>
-                <li><strong>WifiAPNet & Hostapd Package Maintenance:</strong> Added VxLAN defragmentation, managed hostapd packages, maintained kernel code, wrote autotests, performed bug fixes, and analyzed WiFi sniffers using Wireshark.<br><em>Technologies:</em> C, Python, Shell script, Linux, Make</li>
-            </ul>
-        </div>
+  <section>
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Siemens PLM Software, Pune — Senior Software Engineer (Backend)</h3>
+      <p>Apr 2025 – Present</p>
+      <ul>
+        <li>Training for Team Center: Product Lifecycle Management</li>
+      </ul>
+      <p><em>Technologies Used:</em> C++, TeamCenter, Backend Systems (training phase)</p>
+    </div>
 
-        <div class="job">
-            <h3>Embedded Software Engineer at Espressif, Pune</h3>
-            <p><strong>Feb 2023 - Dec 2023</strong></p>
-            <ul>
-                <li><strong>Matter (New Smart Home IOT Standard):</strong> Got ESP32 and ESP32S3 certified by Amazon’s Matter Simple Setup, added fixes in ESP-matter GitHub repos, implemented Delta OTA feature using HTTPS.<br><em>Technologies:</em> C++, OOPS, RTOS, FreeRTOS, CMake, Make</li>
-            </ul>
-        </div>
+    <div class="job">
+      <h3>Arista Networks — Software Engineer, Embedded and WiFi</h3>
+      <p>Dec 2023 – Dec 2024</p>
+      <ul>
+        <li>Owned the feature to generate AP Uptime Reports</li>
+        <li>Added VxLAN defragmentation, maintained hostapd and wireless management features</li>
+        <li>Experience in WiFi kernel code, autotests, Wireshark debugging</li>
+      </ul>
+      <p><em>Technologies Used:</em> C, Go, Python, Linux, Make, Shell Script, Wireshark, Docker</p>
+    </div>
 
-        <div class="job">
-            <h3>Associate Engineer at Espressif, Pune</h3>
-            <p><strong>July 2021 - Jan 2023</strong></p>
-            <ul>
-                <li><strong>Matter (New Smart Home IOT Standard):</strong> Developed Bluetooth controller, Ethernet commissioning, implemented various smart device types, and handled GitHub issues and feature requests.<br><em>Technologies:</em> C, C++, OOPS, Bluetooth, Ethernet, Wi-Fi, RTOS, FreeRTOS, CMake, Make</li>
-                <li><strong>Ecosystem Feature Requests:</strong> Created device types requested by clients like Google, Apple, and Amazon.</li>
-            </ul>
-        </div>
+    <div class="job">
+      <h3>Espressif Systems — Embedded Software Developer</h3>
+      <p>Feb 2023 – Dec 2023</p>
+      <ul>
+        <li>Got ESP32 and ESP32S3 certified for Amazon Matter</li>
+        <li>Delta OTA via HTTPS, BLE controller & Ethernet commissioning for Matter</li>
+      </ul>
+      <p><em>Technologies Used:</em> C++, OOPS, RTOS, FreeRTOS, CMake, Make, HTTPS</p>
 
-        <div class="job">
-            <h3>Intern at Espressif, Pune</h3>
-            <p><strong>Jan 2021 – June 2021</strong></p>
-            <ul>
-                <li><strong>Blufi Protocol for Nimble:</strong> Implemented Blufi - a secure protocol for the Apache Nimble Bluetooth stack used by Espressif.<br><em>Technologies:</em> C, Apache Nimble, Bluetooth, RTOS, FreeRTOS, CMake, Make</li>
-            </ul>
-        </div>
-    </section>
+      <h3>Associate Engineer</h3>
+      <p>Jul 2021 – Feb 2023</p>
+      <ul>
+        <li>Developed smart device types and BLE-based Matter controllers</li>
+        <li>Tested Matter examples, handled GitHub issues and release test events</li>
+        <li>Created device types requested by Google, Apple, Amazon</li>
+      </ul>
+      <p><em>Technologies Used:</em> C, C++, OOPS, Bluetooth, Ethernet, Wi-Fi, Embedded Systems, Smart Home Standards, RTOS, FreeRTOS, CMake, Make</p>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Debugg Assist for Arista:</strong> Flask-based website to generate backtrace/debug info from debug bundle using GDB.<br><em>Tech:</em> Python, Flask, GDB</li>
-            <li><strong>Fire Detection System:</strong> Machine learning CNN model to detect fire from surveillance videos.<br><em>Tech:</em> Python, CNN, Deep Learning, OpenCV</li>
-        </ul>
-    </section>
+      <h3>Intern</h3>
+      <p>Jan 2021 – Jun 2021</p>
+      <ul>
+        <li>Implemented Blufi protocol for NimBLE Bluetooth stack</li>
+      </ul>
+      <p><em>Technologies Used:</em> C, Apache NimBLE, Bluetooth, RTOS, FreeRTOS, CMake, Make</p>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can find me on <a href="https://www.linkedin.com/in/sonalinpatil" target="_blank">LinkedIn</a></p>
-    </section>
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Debug Assist (Oct 2024):</strong> <a href="https://sonalis-portfolio.onrender.com/" target="_blank">GDB parser website</a> for debug info</li>
+      <li><strong>Fire Detection System:</strong> Published in <a href="https://books.google.co.in/books?id=wkOmEAAAQBAJ" target="_blank">Computer Vision Book</a> (Chapter 7)</li>
+      <li><strong>Blog/Portfolio:</strong> <a href="https://sonalis-portfolio.onrender.com/" target="_blank">Made with HTML, CSS, Python</a></li>
+      <li><strong>SignUp Page:</strong> Flask, REST API, MongoDB</li>
+    </ul>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Sonali Patil</p>
-    </footer>
+  <section>
+    <h2>Achievements</h2>
+    <ul>
+      <li>DevOps Certificate (UpSkillMafia): REST APIs, Docker, Kubernetes, AWS, Terraform</li>
+      <li>Spoke at IOTPune on Matter IoT Standard <a href="https://www.linkedin.com/feed/update/urn:li:activity:6982233898684440576" target="_blank">(View Talk)</a></li>
+      <li>1st Prize in WCE 2019 Research Symposium (Fire Detection)</li>
+      <li>Hackerrank (6★), Codechef (4★), Leetcode (500+ problems)</li>
+      <li>DSA Certificate by Coding Ninja</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sonali Patil</p>
+  </footer>
 </body>
 
 </html>
